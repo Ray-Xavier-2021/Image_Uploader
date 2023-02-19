@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Montserrat:wght@500;600;700&family=Noto+Sans:wght@500&display=swap" rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Image Uploader</title>
+
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- Image Uploader -->
+      <div class="image-uploader">
+        <div class="uploader">
+          <h1 class="title">Upload your Image</h1>
+      
+          <p class="file-type">file should be Jpeg, Png, ...</p>
+      
+          <div class="image-container">
+            <div class="drop-zone">
+              <img class="img-thumbnail" src="image.svg" alt="Thumbnail">
+              <p class="upload-message">Drag & Drop your image here</p>
+            </div>
+            <span class="message">Or</span>
+          </div>
+      
+          <!-- Create custom file button -->
+          <div class="upload-button-container">
+            <!-- Input only accept image files -->
+            <input id="upload-file" type="file" hidden accept="image/*">
+            <!-- <label for="upload-file" class="upload-button">Choose a file</label> -->
+            <button class="upload-button">Choose a file</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Loader -->
+      <div class="image-loading" hidden>
+      
+        <h1 class="loading-title">Uploading...</h1>
+      
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      
+      </div>
+
+      <!-- Image Uploader Success -->
+      <div class="success-image-uploader" hidden>
+        
+        <div class="success-uploader-message">
+          <i class="fa fa-check-circle"></i>
+          <p class="success-file-message">Uploaded Successfully!</p>
+        </div>
+      
+        <div class="success-drop-zone">
+        </div>
+      
+      
+        <!-- Create custom file copy -->
+        <div class="success-copy-file-container">
+          <!-- Input only accept image files -->
+          <input class="success-copy-file" type="text" value="https://google.com/">
+          <button type="button" class="success-copy-button">Copy File</button>
+        </div>
+      </div>
+
+      <!-- Clipboard -->
+      <div class="clipboard">
+        <h1 class="clipboard-title">Clipboard</h1>
+              
+        <div class="clipboard-image-container">
+          <!-- <img class="clipboard-image" src="yang.jpg" alt="Image"> -->
+        </div>
+        
+
+      </div>
+
+      <footer>
+        <p>created by <span>Ray-Xavier-2021</span> - devChallenges.io</p>
+      </footer>
+
+    </div>
+
+    <script src="ES6script.js"></script>    
+
+  </body>
+</html>
